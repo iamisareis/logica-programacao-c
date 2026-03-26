@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+ float arroz = 22.90;
+ float feijao = 8.50;
+ float oleo = 6.75;
+ float sabao = 4.25;
+ 
+ float soma, media, desconto, valor_a_pagar;
+ 
+ soma = arroz + feijao + oleo + sabao;
+ printf("O resultado da soma é R$ %.2f\n" , soma);
+ 
+ media = soma / 4;
+ printf("O resultado da média é R$ %.2f\n" , media);
+ 
+ desconto = soma * 0.10;
+ printf("O valor do desconto é de R$ %.2f\n" , desconto);
+ 
+ valor_a_pagar = soma - desconto;
+ printf("O valor do a pagar é de R$ %.2f\n" , valor_a_pagar);
+ 
+ return 0;
+}
