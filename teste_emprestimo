@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    float totalSalario, valorPrestacao, limite;
+    
+    printf("Digite o valor do seu salário: ");
+    scanf("%f", &totalSalario);
+    
+    printf("Quanto pretende pagar por mês? \n");
+    scanf("%f", &valorPrestacao);
+    printf("====================================\n");
+    limite = totalSalario * 0.20;
+    
+    if(valorPrestacao > limite){
+       printf ("Empréstimo não concedido!\n");
+    }
+    else { 
+        printf("Empréstimo concedido!\n");
+
+    }
+    return 0;
+}
