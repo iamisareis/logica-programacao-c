@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    float total_tanque, LitrosAtual, porcentagemAtual, falta;
+    
+    printf("Digite a quantidade total de litros do tanque: ");
+    scanf("%f", &total_tanque);
+    
+    printf("Digite a quantidade de litros atual do tanque: \n");
+    scanf("%f", &LitrosAtual);
+    
+    porcentagemAtual = (LitrosAtual/total_tanque)*100;
+    if(porcentagemAtual < 25){
+        falta = total_tanque - LitrosAtual;
+        printf("Tanque baixo. Faltam %.2f litros para encher\n", falta);}
+    else { 
+        printf("Nível de combustível adequado. Não é necessário abastecer agora.\n");}
+    return 0;
+}
