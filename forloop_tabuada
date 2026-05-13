@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main() {
+    int numero;
+    printf("Digite um número da tabuada: ");
+    scanf("%d", &numero);
+    printf("==================================\n"); 
+    
+    int n;
+    printf("Digite a quantidade de repetições: ");
+    scanf("%d", &n);
+    printf("==================================\n");
+    
+    printf("Tabuada do %d\n", numero);
+    printf("==================================\n");
+    
+    for(int i = 1; i <= n; i++){
+        int resultado = numero * i;
+        printf("%d x %d = %d\n", numero, i, resultado);
+        }
+
+}
