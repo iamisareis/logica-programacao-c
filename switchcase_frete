@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int regiao;
+    float valorFrete;
+    printf ("Digite a região: 1 - Sul; 2 - Sudeste; 3 - Nordeste; 4 - Norte/Centro-Oeste: ");
+    scanf("%d,", &regiao);
+    
+    printf("========================================\n");
+    valorFrete = 0;
+    switch (regiao){
+        case 1:
+        case 2:
+         valorFrete = 15.00;
+         break;
+       case 3:
+          valorFrete = 25.00;
+         break;
+        case 4:
+          valorFrete = 35.00;
+          break;
+        default:
+        printf("Região não atendida!");
+        break;
+    
+}
+printf("O valor do frete é de R$%.2f", valorFrete);
+    return 0;
+}
