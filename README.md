@@ -2,7 +2,7 @@
 
 💻 Estudante de programação
 📈 Futura assessora de investimentos
-☁️ Explorando Cloud (AWS) e tecnologia
+☁️ Explorando Cloud (AWS) e cibersegurança
 🚀 Em constante evolução
 
 ---
