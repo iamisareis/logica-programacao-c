@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    char opcao;
+    
+    printf("Digite uma opção: A - Consulta; B - Extrato detalhado; C - Transferência\n");
+    scanf("%c", &opcao);
+    
+    printf("========================================\n");
+    
+    switch (opcao){
+        case 'A':
+        printf("O usuário selecionou a opção A\n");
+        break;
+        case 'B':
+        printf("O usuário selecionou a opção B\n");
+        break;
+        case 'C':
+        printf("O usuário selecionou a opção C\n");
+        break;
+        default:
+        printf("Opção inválida!!\n");
+        break;
+}
+    return 0;
+}
