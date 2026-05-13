@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int diaSemana = 6;
+    
+    printf("========================================\n");
+    
+    switch (diaSemana){
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        printf("Dia Útil: Expediente comercial das 09h às 18h\n");
+        break;
+       case 6:
+       case 7:
+        printf("Final de semana: Expediente fechado\n");
+        break;
+        default:
+        printf("Opção inválida");
+        break;
+    
+}
+    return 0;
+}
