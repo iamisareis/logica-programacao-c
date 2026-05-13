@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int nivelUsuario;
+    
+    printf("Digite seu nível de acesso: ");
+    scanf("%d", &nivelUsuario);
+    
+    printf("========================================\n");
+    
+    switch (nivelUsuario){
+        case 1:
+        printf("Acesso: Visitante (Apenas leitura)\n");
+        break;
+        case 2:
+        printf("Acesso: Usuário padrão (Leitura e escrita)\n");
+        break;
+        case 3:
+        printf("Acesso: Administrador (Controle Total)\n");
+        break;
+        default:
+        printf("Erro: Nível de acesso inválido\n");
+        break;
+}
+    return 0;
+}
