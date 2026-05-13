@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main() {
+    int senha = 1234;
+    
+    int senhaDigitada;
+    int acessoConcedido = 0;
+    
+    for(int i = 1; i <= 3; i++){
+    printf("Digite a sua senha - tentativa (%d): ", i);
+    scanf("%d", &senhaDigitada);
+    printf("==================================\n"); 
+        if(senhaDigitada == senha){
+         printf("Senha correta\n");
+         acessoConcedido = 1;
+         break;
+    } else {
+        printf("Senha incorreta\n");
+        }
+    }
+if(acessoConcedido == 0){
+    printf("Acesso negado");
+}else{
+    printf("Acesso permitido");
+}
+}
