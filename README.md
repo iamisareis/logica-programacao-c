@@ -17,7 +17,7 @@ Atualmente focada em desenvolver habilidades práticas em programação, enquant
 ## 🎯 Objetivos
 
 * 📚 Evoluir na programação (lógica, estrutura de dados e projetos reais)
-* ☁️ Me especializar em Cloud Computing (AWS)
+* ☁️ Me especializar em Cloud Computing (AWS) e cibersegurança
 * 📊 Conquistar certificações na área de investimentos (ANCORD)
 * 💼 Construir uma carreira sólida unindo tecnologia + finanças
 
