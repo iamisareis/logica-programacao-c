@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main() {
+    int dado = 11;
+    int vidaInimigo = 10;
+    
+    printf("========================================\n");
+    
+    switch (dado){
+        case 1:
+        printf("Falha na jogada!\n");
+        break;
+        case 2:
+        case 3:
+        printf("Ataque fraco. Dano -2 de vida do inimigo\n");
+        vidaInimigo = vidaInimigo - 2;
+        break;
+        case 4:
+        case 5:
+        printf("Ataque normal. Dano -4 de vida do inimigo\n");
+        vidaInimigo = vidaInimigo - 4;
+        break;
+        case 6:
+        printf("Ataque Crítico. Dano -8 de vida do inimigo\n");
+        vidaInimigo = vidaInimigo - 8;
+        break;
+        default:
+        printf("Jogada inválida!\n");
+        break;
+    
+}
+printf("========================================\n");
+printf("A vida restante do inimigo é de %d", vidaInimigo);
+    return 0;
+}
