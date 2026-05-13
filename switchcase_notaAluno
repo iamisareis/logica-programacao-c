@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int nota;
+    
+    printf("Digite a nota do aluno entre 0-10: ");
+    scanf("%d", &nota);
+    
+    printf("========================================\n");
+    
+    switch (nota){
+        case 10:
+        case 9:
+        printf("Conceito A: EXCELENTE!!\n");
+        break;
+        case 8:
+        case 7:
+        printf("Conceito B: BOM!\n");
+        break;
+        case 6:
+        case 5:
+        printf("Conceito C: REGULAR!\n");
+        break;
+        default:
+        printf("Conceito D: INSUFICIENTE - REPROVADO!!\n");
+        break;
+    
+}
+    return 0;
+}
