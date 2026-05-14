@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <ctype.h>
+
+int main() {
+    float numero = 0;
+    char continuar = 'S';
+    float somatorio = 0; 
+    int contador = 0;
+    float media = 0;
+    
+    while ( toupper (continuar) == 'S'){
+        printf("Digite um número: ");
+        scanf(" %f", &numero);
+        
+        somatorio = somatorio + numero;
+        contador ++;
+        
+        printf("Deseja continuar? ");
+        scanf(" %c", &continuar);
+    }
+media = somatorio / contador;
+printf("A média é de: %.2f", media);
+
+return 0;
+}
