@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main() {
+    int candidatoA = 0;
+    int candidatoB = 0;
+    int branco = 0; 
+
+    int voto;
+    int continuar = 1;
+    
+    while(continuar == 1){
+        printf("Digite seu voto: ");
+        scanf("%d", &voto);
+        
+        switch(voto){
+            case 1:
+               candidatoA ++;
+               break;
+            case 2:
+               candidatoB ++;
+               break;
+            case 3:
+               branco ++;
+               break;
+            default:
+               printf("Voto inválido\n");
+               break;
+        }
+        
+        
+        printf("Deseja continuar? 1 - Sim | 0 - Não: ");
+        scanf("%d", &continuar);
+    }
+    
+    printf("============================\n");
+    printf("O candidato A obteve %d votos\n", candidatoA);
+    printf("O candidato B obteve %d de votos\n", candidatoB);
+    printf("Votos em branco: %d", branco);
+
+    return 0;
+}
