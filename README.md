@@ -52,7 +52,7 @@ Estou construindo meu caminho um passo de cada vez — e documentando tudo por a
 
 ## 📫 Conecte-se comigo
 
-* 💼 LinkedIn: (www.linkedin.com/in/isabela-reis-706b633b4)
+* 💼 LinkedIn: (www.linkedin.com/in/isabela-reis-)
 * 📧 Email: (isabelareiste@gmail.com)
 
 ---
