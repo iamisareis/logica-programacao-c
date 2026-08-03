@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    char vendedores[4][50];
+    int vendas[4];
+    
+    int indiceMaior = 0;
+    
+    printf("---------AVALIAÇÃO DE DESEMPENHO---------\n");
+   
+    for(int i = 0; i < 4; i++){
+        printf("Digite os dados do vendedor %d\n", i + 1);
+        printf("Nome: ");
+        scanf("%49s", vendedores[i]);
+        
+        printf("Total vendido: ");
+        scanf("%d", &vendas[i]);
+    }
+    for(int i = 0; i < 4; i++){
+        if(vendas[i] > vendas[indiceMaior]){
+            indiceMaior = i;
+        }
+    }
+    
+    printf("=========TOP PERFORMANCE=============\n");
+    printf("Nome: %s - com a venda de %d", vendedores[indiceMaior], vendas[indiceMaior]);
+    return 0;
+}
