@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() {
+   float saldo = 1000.00;
+   int opcao;
+   float valor;
+   
+   do{
+       printf("===SISTEMA DE CAIXA ELETRÔNICO===\n");
+       printf("Digite as seguintes opções: \n");
+       printf("1 - Consultar Saldo\n");
+       printf("2 - Sacar\n");
+       printf("3 - Sair\n");
+       scanf("%d", &opcao);
+        
+        
+        switch(opcao){
+            case 1:
+                printf("O saldo é de: R$ %.2f\n", saldo);
+                break;
+            case 2:
+                printf("Digite o valor que deseja sacar: ");
+                scanf("%f", &valor);
+                
+                if(valor > saldo){
+                    printf("Saldo insuficiente\n");
+                }else
+                saldo = saldo - valor;
+                break;
+            case 3:
+                printf("Atendimento encerrado. Volte Sempre!\n");
+            default:
+                printf("Opção Inválida!");
+        }
+   }while(opcao != 3);
+   printf ("Sessão encerrada. Obrigada!\n");
+   
+    return 0;
+}
