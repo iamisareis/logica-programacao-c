@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+   int numero;
+   
+   do{
+       printf("DIgite um número postivo maior que zero: ");
+       scanf("%d", &numero);
+       
+       if(numero <=0){
+           printf("Valor inválido. Tente novamente\n");
+        }
+       
+   }while(numero <= 0);
+   printf("Foi digtado o número: %d", numero);
+    return 0;
+}
