@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int orig[10] = {45,56,23,12,78,89,456,123,369,500};
+    int pares[10];
+    int j = 0;
+    
+    for (int i = 0; i<10; i++){
+    if(orig[i]%2 == 0){
+        pares[j] = orig[i];
+        j++;
+    }
+}
+printf("IMprimindo números pares da lista\n");
+    for (int i = 0; i<j; i++){
+       printf("%d\n", pares[i]); 
+    }
+}
