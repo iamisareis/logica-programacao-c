@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    char codigo[15];
+    
+    printf("Digite o código de barras do produto: ");
+    scanf("%14s", codigo);
+    
+    printf ("O código gravado é: %s", codigo);
+    
+    
+    return 0;
+}
